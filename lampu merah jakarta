@@ -1,0 +1,88 @@
+int Hijau_1_Bahar = 2;
+int Kuning_1_Bahar = 3;
+int Merah_1_Bahar = 4;
+
+int Merah_2_Bahar = 5;
+int Kuning_2_Bahar = 6;
+int Hijau_2_Bahar = 7;
+
+int Hijau_3_Bahar = 8;
+int Kuning_3_Bahar = 9;
+int Merah_3_Bahar = 10;
+
+int Hijau_4_Bahar = 11;
+int Kuning_4_Bahar = 12;
+int Merah_4_Bahar = 13;
+
+void setup()
+{
+  // Atur mode output untuk semua lampu
+  pinMode(Hijau_1_Bahar , OUTPUT);
+  pinMode(Kuning_1_Bahar , OUTPUT);
+  pinMode(Merah_1_Bahar , OUTPUT);
+  
+  pinMode(Hijau_2_Bahar , OUTPUT);
+  pinMode(Kuning_2_Bahar , OUTPUT);
+  pinMode(Merah_2_Bahar , OUTPUT);
+  
+  pinMode(Hijau_3_Bahar , OUTPUT);
+  pinMode(Kuning_3_Bahar , OUTPUT);
+  pinMode(Merah_3_Bahar , OUTPUT);
+  
+  pinMode(Hijau_4_Bahar , OUTPUT);
+  pinMode(Kuning_4_Bahar , OUTPUT);
+  pinMode(Merah_4_Bahar , OUTPUT);
+}
+//menyalakan lampu berlang kali dengan menggunakan looping
+void loop()
+{
+ //menyalakan blok 1
+  digitalWrite(Hijau_1_Bahar, HIGH);
+  digitalWrite(Merah_2_Bahar, HIGH);
+  digitalWrite(Merah_3_Bahar, HIGH);
+  digitalWrite(Merah_4_Bahar, HIGH);
+  delay(5000);
+  digitalWrite(Hijau_1_Bahar, LOW);
+  digitalWrite(Kuning_1_Bahar, HIGH);
+  delay(2000);
+  digitalWrite(Kuning_1_Bahar, LOW);
+  digitalWrite(Merah_1_Bahar, HIGH);
+  digitalWrite(Merah_2_Bahar, LOW);
+  
+  //Menyalakan Blok 2
+  digitalWrite(Hijau_2_Bahar, HIGH);
+  digitalWrite(Merah_3_Bahar, HIGH);
+  digitalWrite(Merah_4_Bahar, HIGH);
+  delay(5000);
+  digitalWrite(Hijau_2_Bahar, LOW);
+  digitalWrite(Kuning_2_Bahar, HIGH);
+  delay(2000);
+  digitalWrite(Kuning_2_Bahar, LOW);
+  digitalWrite(Merah_2_Bahar, HIGH);
+  digitalWrite(Merah_3_Bahar, LOW);
+
+  
+  //menyalakan blok 3
+  digitalWrite(Hijau_3_Bahar, HIGH);
+  digitalWrite(Merah_4_Bahar, HIGH);
+  digitalWrite(Merah_1_Bahar, HIGH);
+  delay(5000);
+  digitalWrite(Hijau_3_Bahar, LOW);
+  digitalWrite(Kuning_3_Bahar, HIGH);
+  delay(2000);
+  digitalWrite(Kuning_3_Bahar, LOW);
+  digitalWrite(Merah_3_Bahar, HIGH);
+  digitalWrite(Merah_4_Bahar, LOW);
+  
+  //menyalakan blok 4
+  digitalWrite(Hijau_4_Bahar, HIGH);
+  digitalWrite(Merah_1_Bahar, HIGH);
+  digitalWrite(Merah_2_Bahar, HIGH);
+  delay(5000);
+  digitalWrite(Hijau_4_Bahar, LOW);
+  digitalWrite(Kuning_4_Bahar, HIGH);
+  delay(2000);
+  digitalWrite(Kuning_4_Bahar, LOW);
+  digitalWrite(Merah_4_Bahar, HIGH);
+  digitalWrite(Merah_1_Bahar, LOW);
+}
